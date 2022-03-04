@@ -13,23 +13,26 @@
     <div class="container">
         <div class="title-box">
             <h1 class="title-text">Rock Paper Scissors</h1>
-            <p class="score">First to 5 wins!</p>
+            <p id="score" class="score">First to 5 wins!</p>
         </div>
         <div class="card">
             <div class="scores">
-                <p>You: <span class="my-score">0</span></p>
-                <p>Computer: <span class="computer-score">0</span></p>
+                <p>You: <span id="my-score">0</span></p>
+                <p>Computer: <span id="computer-score" class="computer-score">0</span></p>
             </div>
             <div class="choice-box">
-                <button class="btn-style"><img src="./icons/rock.svg" class="rock"></button>
-                <button class="btn-style"><img src="./icons/paper.svg" class="rock"></button>
-                <button class="btn-style"><img src="./icons/scissors.svg" class="rock"></button>
+                <button class="choice btn-style"><img id="rock" src="./icons/rock.svg"></button>
+                <button class="choice btn-style"><img id="paper" src="./icons/paper.svg"></button>
+                <button class="choice btn-style"><img id="scissors" src="./icons/scissors.svg"></button>
             </div>
             <p class="weapon">Choose Your Weapon!</p>
-            <p class="my-choice">You chose <span></span></p>
-            <p class="computer-choice">Computer chose <span></span></p>
+            <p>You chose <span id="my-choice"></span></p>
+            <p>Computer chose <span id="computer-choice"></span></p>
             <p class="who-won">You win!</p>
         </div>
+    </div>
+
+    <script src="rockscissors.js"></script>
 </body>
 
 </html>

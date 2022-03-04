@@ -23,13 +23,12 @@ body {
 .card {
   background-color: #fff;
   box-shadow: 0rem 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.15);
-  height: 24rem;
+  height: 26rem;
   width: 44rem;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
-  /* justify-content: center; */
   align-items: center;
   gap: 2rem;
 }
@@ -51,9 +50,7 @@ body {
   color: #fff;
 }
 
-.rock,
-.paper,
-.scissors {
+img {
   width: 3rem;
   height: 3rem;
   padding: 2rem;
@@ -90,11 +87,13 @@ body {
   border: thin;
   border-radius: 50%;
   background-color: rgba(238, 133, 238, 0.2);
+  transition: 100ms;
 }
 
 .btn-style:hover {
   cursor: pointer;
   background-color: rgba(252, 70, 252, 0.2);
+  transform: scale(1.1);
 }
 
 .scores {
