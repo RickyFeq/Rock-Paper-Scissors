@@ -3,8 +3,9 @@ const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 const score = document.getElementById('score');
 const choices = document.querySelectorAll('.choice');
-const myWeapon = document.getElementById('my-choice');
-const computerWeapon = document.getElementById('computer-choice');
+const myWeapon = document.getElementById('myy-choice');
+const computerWeapon = document.getElementById('weapon2');
+let draw = document.getElementById('weapon');
 let myScore = document.getElementById('my-score');
 let computerScore = document.getElementById('computer-score');
 let playerSelection;
@@ -55,13 +56,27 @@ function getWinner(p, c) {
 }
 
 function showWinner(winner, computerSelection) {
+  // if (scoreboard.player == 5 || scoreboard.computer == 5) {
+  //   document.getElementById('weapon').innerHTML = "Game Over!"
+  // }
   if (winner === 'Player') {
     scoreboard.player++;
     myScore.innerHTML = scoreboard.player;
-    myWeapon.innerHTML = playerSelection;
-    computerWeapon.innerHTML = computerSelection;
+    draw.innerHTML = `You win!`;
+    computerWeapon.innerHTML = `Computer chose ${computerSelection}`;
+    computerWeapon.style.display = 'block';
+    console.log(winner);
   } else if (winner === 'Computer') {
     scoreboard.computer++;
+    computerScore.innerHTML = scoreboard.computer;
+    draw.innerHTML = `You lose!`;
+    computerWeapon.innerHTML = `Computer chose ${computerSelection}`;
+    computerWeapon.style.display = 'block';
+    console.log(winner);
+  } else {
+    draw.innerHTML = 'Draw!';
+    computerWeapon.style.visibility = 'hidden';
+    console.log('draw');
   }
 }
 

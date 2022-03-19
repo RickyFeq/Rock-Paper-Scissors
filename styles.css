@@ -76,6 +76,7 @@ img {
   border-radius: 10rem;
   padding: 0.2rem 0;
   width: 80%;
+  margin-top: 5rem;
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
@@ -108,15 +109,14 @@ p {
   font-weight: 400;
 }
 
-.my-choice,
-.computer-choice {
-  display: none;
-  font-size: 1.4rem;
-}
-
-.weapon {
-  /* display: none; */
-  margin-top: 3rem;
+#weapon {
+  margin-top: 1.5rem;
   font-size: 1.8rem;
+  font-weight: 600;
+}
+#weapon2 {
+  display: none;
+  font-size: 1.8rem;
+  display: none;
   font-weight: 600;
 }
